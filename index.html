@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monero Wallet Security</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body style="margin-left:10ex; margin-right:10ex;margin-top:5ex;">
+<main>
+    <h1>Wallet comparison</h1>
+    <table style="width:100%;">
+        <thead>
+        <tr class="header">
+            <th scope="col" colspan="2"></th>
+            <th>CLI</th>
+            <th>GUI</th>
+            <th>Feather</th>
+        </tr>
+        </thead>
+        <tbody>
+        {tbody}
+        </tbody>
+    </table>
+    <br>
+    <h1>Release signing keys</h1>
+    <table>
+        <thead>
+        <tr class="header">
+            <th>Wallet</th>
+            <th>Fingerprint</th>
+            <th>Link</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>Feather</th>
+            <td>8185 E158 A333 30C7 FD61 BC0D 1F76 E155 CEFB A71C</td>
+            <td><a href=https://docs.featherwallet.org/guides/release-signing-key>link</a></td>
+        </tr>
+        <tr>
+            <th>CLI / GUI</th>
+            <td>81AC 591F E9C4 B65C 5806 AFC3 F0AF 4D46 2A0B DF92</td>
+            <td><a href=https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc>link</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <h1>Listing requirements</h1>
+    <p>
+        - Open source<br>
+        - Monero-only<br>
+        - Self-custody<br>
+        - Reproducible<br>
+        - Local synchronization<br>
+        - Latest release less than one year ago<br>
+        <br>
+    </p>
+    <p>
+        Wallets that do not meet the requirements<br>
+        - All mobile wallets (reason: none appear to be reproducible)<br>
+        - Cake (reason: multicoin, not reproducible)<br>
+        - Edge (reason: multicoin, not reproducible, remote synchronization)<br>
+        - Exodus (reason: closed-source, multicoin)<br>
+        - monero.com (reason: not reproducible)<br>
+        - MyMonero (reason: not reproducible, remote synchronization)<br>
+        - Stack (reason: multicoin, not reproducible)<br>
+    </p>
+    <p>
+        <br>
+    <h1>Reproducibile builds requirements</h1>
+    <table>
+        <thead>
+        <tr>
+            <th style="text-align:left">Requirement</th>
+            <th>Weak</th>
+            <th>Strong</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="text-align:left">Bit-identical outputs</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">Local reproduction supported</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">Build environment is pinned</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">Build environment is offline</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">Build is containerized</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">Build scripts exist in main repo</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">All inputs are pinned</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">All inputs are mirrored</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+        </tbody>
+    </table>
+    <br><br>
+</main>
+</body>
+</html>

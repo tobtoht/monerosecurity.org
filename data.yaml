@@ -1,0 +1,214 @@
+---
+"Meta":
+  "Official site":
+    cli: "Link"
+    cli.link: "https://www.getmonero.org/"
+    gui: "Link"
+    gui.link: "https://www.getmonero.org/"
+    feather: "Link"
+    feather.link: "https://featherwallet.org/"
+  "Maintainer":
+    cli: "Monero Core"
+    gui: "Monero Core"
+    feather: "tobtoht"
+  "Graphics":
+    cli: "CLI"
+    gui: "GUI"
+    feather: "GUI"
+  "Language":
+    cli: "C++"
+    gui: "C++/QML"
+    feather: "C++"
+  "Framework":
+    cli: "-"
+    gui: "Qt Quick"
+    feather: "Qt Widgets"
+"Policy":
+  "Security Policy":
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
+    feather.link: "https://github.com/feather-wallet/feather/blob/master/SECURITY.md"
+  "Bug Bounty Program":
+    cli: "Yes"
+    cli.link: "https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md"
+    gui: "Yes"
+    gui.link: "https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md"
+    feather: "Yes"
+    feather.link: "https://github.com/feather-wallet/feather/blob/master/SECURITY.md"
+  "Audits":
+    cli: "None"
+    gui: "None"
+    feather: "None"
+"Source":
+  "Open Source":
+    link: "https://en.wikipedia.org/wiki/Open_source"
+    cli: "Yes"
+    cli.link: "https://github.com/monero-project/monero"
+    gui: "Yes"
+    gui.link: "https://github.com/monero-project/monero-gui"
+    feather: "Yes"
+    feather.link: "https://github.com/feather-wallet/feather"
+  "License":
+    link: "https://opensource.org/licenses"
+    cli: "BSD-3"
+    cli.link: "https://github.com/monero-project/monero/blob/master/LICENSE"
+    gui: "BSD-3"
+    gui.link: "https://github.com/monero-project/monero-gui/blob/master/LICENSE"
+    feather: "BSD-3"
+    feather.link: "https://github.com/feather-wallet/feather/blob/master/LICENSE"
+  "Signed tags":
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
+"Supply chain":
+  "Dependency pinning":
+    cli: "Yes"
+    gui: "Partial"
+    feather: "Yes"
+"Build system":
+  "Compiler":
+    cli: "GCC 7.5.0"
+    gui: "GCC 7.5.0"
+    feather: "GCC 13.3.0"
+  "Reproducible builds":
+    link: "https://reproducible-builds.org/"
+    cli: "Strong"
+    cli.link: "https://github.com/monero-project/monero/blob/master/contrib/gitian/README.md"
+    gui: "Partial, Weak"
+    gui.link: "https://github.com/monero-project/monero-gui/issues/4253"
+    feather: "Strong"
+    feather.link: "https://github.com/feather-wallet/feather/blob/master/contrib/guix/README.md"
+  "Bootstrappable builds":
+    link: "https://bootstrappable.org/"
+    cli: "No"
+    gui: "No"
+    feather: "Yes"
+    feather.link: "https://github.com/feather-wallet/feather/blob/master/contrib/guix/README.md"
+"Release":
+  "Verified reproduction":
+    cli: "Yes"
+    cli.link: "https://github.com/monero-project/gitian.sigs"
+    gui: "No"
+    feather: "Yes"
+    feather.link: "https://github.com/feather-wallet/feather-sigs"
+  "Signed releases":
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
+    feather.link: "https://featherwallet.org/download/"
+  "xTOFU RSK":
+    cli: "No"
+    gui: "No"
+    feather: "Yes"
+    feather.link: "https://docs.featherwallet.org/guides/release-signing-key"
+"Site":
+  "Onion available":
+    link: "https://community.torproject.org/onion-services/"
+    cli: "Yes"
+    cli.link: "http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion/"
+    gui: "Yes"
+    gui.link: "http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion/"
+    feather: "Yes"
+    feather.link: "http://featherdvtpi7ckdbkb2yxjfwx3oyvr3xjz3oo4rszylfzjdg6pbm3id.onion/"
+"Binary":
+  "Position Independent":
+    link: "https://en.wikipedia.org/wiki/Position-independent_code#Position-independent_executables"
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
+  "Stack protected":
+    link: "https://lwn.net/Articles/584225/"
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
+  "Full RELRO":
+    link: "https://ctf101.org/binary-exploitation/relocation-read-only/"
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
+  "Empty RPATH":
+    link: "https://security.stackexchange.com/questions/161799/why-does-checksec-sh-highlight-rpath-and-runpath-as-security-issues"
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
+  "Fortify Source":
+    link: "https://www.gnu.org/software/libc/manual/html_node/Source-Fortification.html"
+    cli: "Partial"
+    gui: "Partial"
+    feather: "Partial"
+  "Shadow Stack":
+    link: "https://en.wikipedia.org/wiki/Shadow_stack"
+    cli: "No"
+    gui: "No"
+    feather: "No"
+  "Indirect Branch Tracking":
+    link: "https://en.wikipedia.org/wiki/Indirect_branch_tracking"
+    cli: "No"
+    gui: "No"
+    feather: "No"
+  "static-PIE":
+    cli: "No"
+    gui: "No"
+    feather: "No"
+  "Dynamic libraries":
+    cli: "4"
+    gui: "25"
+    feather: "5"
+  "Wayland support":
+    link: "https://en.wikipedia.org/wiki/Wayland_(protocol)#Comparison_with_other_window_systems"
+    cli: "N/A"
+    gui: "No"
+    feather: 'Yes'
+  "Sandboxing":
+    link: "https://en.wikipedia.org/wiki/Sandbox_(computer_security)"
+    cli: "No"
+    gui: "No"
+    feather: "Flatpak"
+    feather.link: "https://docs.featherwallet.org/guides/linux"
+"Network":
+  "Third-party services":
+    cli: "No"
+    gui: "Optional"
+    feather: "Optional"
+    feather.link: "https://docs.featherwallet.org/guides/websocket"
+  "Telemetry":
+    cli: "No"
+    gui: "No"
+    feather: "No"
+"Monero":
+  "Monero version":
+    cli: "v0.18.4.3"
+    gui: "v0.18.4.3"
+    feather: "v0.18.4.0"
+  "Wallet implementation":
+    cli: "wallet2"
+    gui: "wallet2"
+    feather: "wallet2"
+  "Standard fee bands":
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
+"Features":
+  "Airgapped signing":
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
+    feather.link: "https://docs.featherwallet.org/guides/hardware-wallet-support"
+  "Hardware wallet support":
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
+    feather.link: "https://docs.featherwallet.org/guides/hardware-wallet-support"
+  "Multisig":
+    cli: "Yes"
+    gui: "No"
+    feather: "No"
+  "Seed passphrase":
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
+  "Proxy support":
+    cli: "Yes"
+    gui: "Yes"
+    feather: "Yes"
